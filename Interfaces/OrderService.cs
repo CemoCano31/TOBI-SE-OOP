@@ -22,6 +22,7 @@ public class OrderService
      Arbeit führen, je nach größe der Klasse./*
      */
     /*var logger =new Logger(); !Abhänigkeit!*/
+    
     logger.Log($"Order {orderID} is being processed...");
     Thread.Sleep(1000);
     logger.Log($"Order {orderID} processed succsessfully");
