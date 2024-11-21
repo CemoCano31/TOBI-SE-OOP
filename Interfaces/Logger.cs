@@ -4,16 +4,16 @@ namespace Interfaces;
 // Klasse, von der alle logger Erben.
 // Abstrakte Klassen verhindern die Instanziierung dieser -> Absicherung deiner Schnittstellen
 
-public abstract class BaseLogger // für morgen : Austauschen mit Interface 
+public interface BaseLogger // für morgen : Austauschen mit Interface 
 {
 
-  public abstract void Log(string message);
+  public  void Log(string message);
   
 }
 
 public class ConsoleLogger : BaseLogger
 {
-  public override void Log(string message)
+  public  void Log(string message)
   {
     Console.WriteLine(message);
   }
@@ -29,7 +29,7 @@ public FileLogger(string filePath)
 {
   FilePath = filePath;
 }
-  public override void Log(string message)
+  public  void Log(string message)
   {
     File.AppendAllText( FilePath, $"{DateTime.Now}:{message}\n");
   }
@@ -42,7 +42,7 @@ public FileLogger(string filePath)
 
 public class JsonLogger : BaseLogger
 {
-  public override void Log(string message)
+  public  void Log(string message)
   {
     File.AppendAllText("./log.json",$"{DateTime.Now}:{message}\n");
   }
