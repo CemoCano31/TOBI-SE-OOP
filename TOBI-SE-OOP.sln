@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "Interfaces\In
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "change-calculator", "change-calculator\change-calculator.csproj", "{2C3B99C7-3A51-431C-A064-B420F6DC68D8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyCollections", "MyCollections\MyCollections.csproj", "{354AE0AA-CE4D-4E90-919B-6DBB664CB6DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollectionTester", "CollectionTester\CollectionTester.csproj", "{6027FA43-C87E-4EEF-8DAF-8D545C2EE48D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{2C3B99C7-3A51-431C-A064-B420F6DC68D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C3B99C7-3A51-431C-A064-B420F6DC68D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C3B99C7-3A51-431C-A064-B420F6DC68D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{354AE0AA-CE4D-4E90-919B-6DBB664CB6DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{354AE0AA-CE4D-4E90-919B-6DBB664CB6DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{354AE0AA-CE4D-4E90-919B-6DBB664CB6DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{354AE0AA-CE4D-4E90-919B-6DBB664CB6DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6027FA43-C87E-4EEF-8DAF-8D545C2EE48D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6027FA43-C87E-4EEF-8DAF-8D545C2EE48D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6027FA43-C87E-4EEF-8DAF-8D545C2EE48D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6027FA43-C87E-4EEF-8DAF-8D545C2EE48D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
