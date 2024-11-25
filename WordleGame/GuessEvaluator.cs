@@ -1,41 +1,62 @@
+using System;
+ 
 class GuessEvaluator
 {
-    public static string Evaluate(string guess, string targetWord)
+    public static void EvaluateAndDisplay(string guess, string targetWord)
     {
-        char[] feedback = new char[5];
         bool[] usedTargetLetters = new bool[5];
-
-        // Grüne Buchstaben (richtige Position)
+ 
+        // Zuerst grüne Buchstaben (richtige Position)
         for (int i = 0; i < 5; i++)
         {
             if (guess[i] == targetWord[i])
             {
-                feedback[i] = '*'; // '*' für grün
+                SetConsoleColor(ConsoleColor.Green);
+                Console.Write(guess[i]);
+                Console.ResetColor();
                 usedTargetLetters[i] = true;
             }
             else
             {
-                feedback[i] = '_'; // '_' für falsch
+                Console.Write("_"); // Platzhalter für falsche Buchstaben
             }
         }
-
+        Console.WriteLine();
+ 
         // Gelbe Buchstaben (richtiger Buchstabe, falsche Position)
         for (int i = 0; i < 5; i++)
         {
-            if (feedback[i] == '*') continue; // Bereits korrekt
-
-            for (int j = 0; j < 5; j++)
+            if (guess[i] != targetWord[i]) // Nur falsche Buchstaben prüfen
             {
-                if (!usedTargetLetters[j] && guess[i] == targetWord[j])
+                bool found = false;
+                for (int j = 0; j < 5; j++)
                 {
-                    feedback[i] = '~'; // '~' für gelb
-                    usedTargetLetters[j] = true;
-                    break;
+                    if (!usedTargetLetters[j] && guess[i] == targetWord[j])
+                    {
+                        found = true;
+                        usedTargetLetters[j] = true;
+                        break;
+                    }
+                }
+ 
+                if (found)
+                {
+                    SetConsoleColor(ConsoleColor.Yellow);
+                    Console.Write(guess[i]);
+                    Console.ResetColor();
+                }
+                else
+                {
+                    Console.Write(guess[i]); // Keine Färbung für falsche Buchstaben
                 }
             }
         }
-
-        return new string(feedback);
+        Console.WriteLine();
+    }
+ 
+    private static void SetConsoleColor(ConsoleColor color)
+    {
+        Console.ForegroundColor = color;
     }
 }
 
