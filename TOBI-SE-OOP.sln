@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyCollections", "MyCollecti
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollectionTester", "CollectionTester\CollectionTester.csproj", "{6027FA43-C87E-4EEF-8DAF-8D545C2EE48D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordleGame", "WordleGame\WordleGame.csproj", "{734BF4F1-6A3C-4285-A382-D181E6871D57}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{6027FA43-C87E-4EEF-8DAF-8D545C2EE48D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6027FA43-C87E-4EEF-8DAF-8D545C2EE48D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6027FA43-C87E-4EEF-8DAF-8D545C2EE48D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{734BF4F1-6A3C-4285-A382-D181E6871D57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{734BF4F1-6A3C-4285-A382-D181E6871D57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{734BF4F1-6A3C-4285-A382-D181E6871D57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{734BF4F1-6A3C-4285-A382-D181E6871D57}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
